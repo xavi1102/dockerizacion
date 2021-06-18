@@ -1,6 +1,6 @@
-package com.docker.controlador;
+package com.controlador;
 
-import com.docker.Modelo.Alumno;
+import com.Modelo.Alumno;
 
 import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.PathVariable;

@@ -1,5 +1,5 @@
 
-package com.docker.Modelo;
+package com.Modelo;
 
 public class Alumno {
     private String universidad;

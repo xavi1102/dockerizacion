@@ -1,5 +1,4 @@
-FROM openjdk:14-jdk-alpine
-RUN apk --no-cache add curl
-ADD target/*.jar app.jar
+FROM openjdk:11
+ADD target/*.jar dockerizacion.jar
 ENV JAVA_OPTS=""
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /dockerizacion.jar" ]
